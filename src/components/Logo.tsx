@@ -14,7 +14,7 @@ const TextSize: Record<SIZE, EM> = {
   small: ".1em",
   medium: "1.5em",
   large: ".1em",
-  huge: ".1em",
+  huge: ".1em"
 } as const;
 
 interface LogoProps {
@@ -34,13 +34,8 @@ const StyledLogo = styled.div<StyledLogoProps>`
   font-family: 'Maple';
   font-weight: 900;
   color: #444;
-  > img {
-    height: ${({size}) => ImgSize[size]};
-  }
-
-  > h1 {
-    font-size: ${({size}) => TextSize[size]};
-  }
+  > img { height: ${({size}) => ImgSize[size]}; }
+  > h1 { font-size: ${({size}) => TextSize[size]}; }
 `;
 
 const Logo = ({
