@@ -1,5 +1,8 @@
 import { EM, SIZE } from "../types/Unit";
 
+// inner
+export const INNER = "1400px";
+export const INNERPADDING = "10px";
 
 // color
 export const COLOR = {
