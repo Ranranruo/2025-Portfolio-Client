@@ -1,6 +1,6 @@
-import { createGlobalStyle } from "styled-components";
+import { css } from "@emotion/react";
 
-const Font = createGlobalStyle`
+const font = css`
 
   // 쿠키런
   @font-face {
@@ -27,4 +27,4 @@ const Font = createGlobalStyle`
   }
 `;
 
-export default Font;
+export default font;

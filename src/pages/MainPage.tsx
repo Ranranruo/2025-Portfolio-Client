@@ -1,9 +1,10 @@
-import Loading from "../components/Loading";
+import Visual from "../components/main/Visual";
 import MainLayout from "../layouts/main/MainLayout";
 
-const MainPage: React.FC = () => {
+const MainPage = () => {
   return (
     <MainLayout>
+      <Visual></Visual>
     </MainLayout>
   );
 }

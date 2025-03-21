@@ -1,12 +1,10 @@
-import Font from "./Font";
-import Reset from "./Reset";
+import { Global } from "@emotion/react";
+import reset from "./Reset";
+import font from "./Font";
 
-const GlobalStyles: React.FC = () => {
+const GlobalStyles = () => {
   return (
-    <>
-      <Reset />
-      <Font />
-    </>
+      <Global styles={[reset, font]}/>
   );
 };
 

@@ -1,6 +1,7 @@
-import styled from "styled-components";
+
 import { EM, SIZE } from "../types/Unit";
 import { COLOR, GAP, TITLESIZE } from "../styles/Variable";
+import styled from "@emotion/styled";
 
 const IMGSIZE: Record<SIZE, EM> = {
   verysmall: ".1em",

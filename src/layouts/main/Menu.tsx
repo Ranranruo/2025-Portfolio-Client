@@ -1,21 +1,21 @@
 import { Link } from "react-router-dom";
-import { styled } from "styled-components";
+import styled from "@emotion/styled";
 
 const StyledMenu = styled.ul`
     display: flex;
     a {
         /* color: #fff; */
-        text-shadow: 0 4px 4px rgba(0, 0, 0, .25);
+        /* text-shadow: 0 4px 4px rgba(0, 0, 0, .25); */
     }
 `;
 
 const Menu = () => {
     return (
         <StyledMenu>
-            <li><Link to="#">홈</Link></li>
-            <li><Link to="#">팀소개</Link></li>
-            <li><Link to="#">팀원소개</Link></li>
-            <li><Link to="#">프로젝트</Link></li>
+            <li><Link to="#">About Me</Link></li>
+            <li><Link to="#">Service</Link></li>
+            <li><Link to="#">Project</Link></li>
+            <li><Link to="#">Skills</Link></li>
         </StyledMenu>      
     );
 }

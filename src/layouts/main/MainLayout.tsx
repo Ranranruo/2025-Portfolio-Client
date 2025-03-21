@@ -1,4 +1,3 @@
-import styled from "styled-components";
 import MainHeader from "./MainHeader";
 
 interface MainLayoutProps {

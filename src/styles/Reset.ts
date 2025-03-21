@@ -1,6 +1,6 @@
-import { createGlobalStyle } from "styled-components";
+import { css } from "@emotion/react";
 
-const Reset = createGlobalStyle`
+const reset = css`
   * {
     padding: 0;
     margin: 0;
@@ -11,4 +11,4 @@ const Reset = createGlobalStyle`
   }
 `;
 
-export default Reset;
+export default reset;
