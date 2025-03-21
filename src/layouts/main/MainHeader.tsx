@@ -1,6 +1,6 @@
 import Logo from "../../components/Logo";
 import Menu from "./Menu";
-import { GAP, INNER, INNERPADDING } from "../../styles/Variable";
+import { GAP, INNER, INNER_PADDING } from "../../styles/Variable";
 import styled from "@emotion/styled";
 import Util from "./Util";
 
@@ -17,7 +17,7 @@ const StyledHeader = styled.header`
         display: flex;
         justify-content: space-between;
         max-width: ${INNER};
-        padding: 0 ${INNERPADDING};
+        padding: 0 ${INNER_PADDING};
         > .left {
 
         }

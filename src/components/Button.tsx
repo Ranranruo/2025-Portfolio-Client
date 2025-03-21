@@ -25,27 +25,23 @@ const DEFAULT_COLOR = {
     }
 }
 
-interface StyledButton {
-    size: SIZE;
-}
+type StyledButtonProps = ButtonProps & React.ButtonHTMLAttributes<HTMLButtonElement>;
 
 interface PrimaryButton {
     children: string;
     color: 'primary' | 'black' | 'white';
     size: SIZE;
-    type: 'default';
 }
 
 interface BorderButton {
     children: string;
     color: ACHROMATIC;
     size: SIZE;
-    type: 'border';
 }
 
 type ButtonProps = PrimaryButton | BorderButton;
 
-const StyledButton = styled.button<StyledButton>`
+const StyledButton = styled.button<StyledButtonProps>`
     font-family: 'Cookie';
     padding: .5em 1em;
     cursor: pointer;
@@ -53,17 +49,29 @@ const StyledButton = styled.button<StyledButton>`
     font-size: ${({size}) => FONT_SIZE[size]};
 `;
 
-const Button = ({
+const PrimaryButton = ({
     children = "default",
-    color,
-    size = "small",
-    type = "default"
-}: ButtonProps) => {
-    return (
-        <StyledButton className={type} color={color} size={size}>
-            {children}
-        </StyledButton>
-    );
+    color = "primary",
+    size = "medium"
+}: PrimaryButton) => {
+    <StyledButton color={color} size={size}>
+        {children}
+    </StyledButton>
+}
+
+const BorderButton = ({
+    children = "default",
+    color = "achromatic400",
+    size = "medium"
+}: BorderButton) => {
+    <StyledButton color={color} size={size}>
+        {children}
+    </StyledButton>
+}
+
+const Button = {
+    primary: PrimaryButton,
+    border: BorderButton
 }
 
 export default Button;
