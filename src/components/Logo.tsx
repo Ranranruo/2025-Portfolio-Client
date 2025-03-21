@@ -1,9 +1,9 @@
 
 import { EM, SIZE } from "../types/Unit";
-import { COLOR, GAP, TITLESIZE } from "../styles/Variable";
+import { COLOR, GAP, TITLE_SIZE } from "../styles/Variable";
 import styled from "@emotion/styled";
 
-const IMGSIZE: Record<SIZE, EM> = {
+const IMG_SIZE: Record<SIZE, EM> = {
   verysmall: ".1em",
   small: ".1em",
   medium: "2em",
@@ -26,8 +26,8 @@ const StyledLogo = styled.div<StyledLogoProps>`
   font-weight: 900;
   color: ${COLOR['main01']};
   gap: ${GAP['small']};
-  > img { height: ${({size}) => IMGSIZE[size]}; }
-  > h1 { font-size: ${({size}) => TITLESIZE[size]}; }
+  > img { height: ${({size}) => IMG_SIZE[size]}; }
+  > h1 { font-size: ${({size}) => TITLE_SIZE[size]}; }
 `;
 
 const Logo = ({

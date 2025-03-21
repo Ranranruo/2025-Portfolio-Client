@@ -1,4 +1,4 @@
-import styled from "styled-components";
+import styled from "@emotion/styled";
 
 const StyledLoading = styled.div`
     background-color: rgba(255, 255, 255, .8);
