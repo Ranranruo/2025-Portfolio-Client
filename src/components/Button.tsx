@@ -59,6 +59,7 @@ const PrimaryButton = ({
     </StyledButton>
 }
 
+// 흠 오류 떳어요
 const BorderButton = ({
     children = "default",
     color = "achromatic400",
