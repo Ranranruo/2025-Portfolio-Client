@@ -58,7 +58,6 @@ const StyledButton = styled.button<StyledButtonProps>`
   border-radius: 5px;
   font-size: ${({ size, detailSize }) => detailSize ? detailSize : FONT_SIZE[size!]};
   ${({ className, color }) => {
-    console.log(className);
     if (className == "primary") {
       const { color: textColor, backgroundColor } = PRIMARY_COLOR[color!];
       return `
