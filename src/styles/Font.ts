@@ -2,6 +2,14 @@ import { css } from "@emotion/react";
 
 const font = css`
 
+  // 프리텐다드
+  @font-face {
+    font-family: 'Pretendard';
+    src: url('https://fastly.jsdelivr.net/gh/Project-Noonnu/noonfonts_2107@1.1/Pretendard-Regular.woff') format('woff');
+    font-weight: 400;
+    font-style: normal;
+}
+
   // 쿠키런
   @font-face {
     font-family: 'Cookie';
@@ -22,6 +30,14 @@ const font = css`
   @font-face {
     font-family: 'Maple';
     src: url('https://fastly.jsdelivr.net/gh/projectnoonnu/noonfonts_20-04@2.1/MaplestoryOTFBold.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+  }
+
+  // 비앤빛
+  @font-face {
+    font-family: 'Bnviit';
+    src: url('font/BnviitLasikOTF.otf');
     font-weight: normal;
     font-style: normal;
   }

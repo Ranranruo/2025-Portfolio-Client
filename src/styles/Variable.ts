@@ -1,11 +1,11 @@
-import { EM, SIZE } from "../types/Unit";
+import { EM, HEX, PX, SIZE } from "../types/Unit";
 
 // inner
 export const INNER = "1400px";
 export const INNER_PADDING = "10px";
 
 // color
-export const COLOR = {
+export const COLOR: Record<string, HEX> = {
     main01: "#39E079",
     main02: "#34D170",
     achromatic01: "#fdfeff",
@@ -20,7 +20,7 @@ export const COLOR = {
     achromatic10: "#212529",
 } as const;
 
-export const GAP = {
+export const GAP: Record<string, PX> = {
     verysmall: "5px",
     small: "10px",
     medium: "20px",
@@ -58,4 +58,3 @@ export const TITLE_SIZE: Record<SIZE, EM> = {
     large: "2.25em",
     huge: "2.625em"
 } as const;
-

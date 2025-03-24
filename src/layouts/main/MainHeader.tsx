@@ -23,7 +23,8 @@ const StyledHeader = styled.header`
         }
         > .right {
             display: flex;
-            gap: ${GAP['medium']};
+            align-items: center;
+            gap: ${GAP['huge']};
         }
     }
 `;

@@ -5,14 +5,14 @@ import { Link } from "react-router-dom";
 
 const StyledUtil = styled.div`
     display: flex;
-    gap: ${GAP['small']};
+    gap: ${GAP['medium']};
     font-size: 20px;
 `;
 const Util = () => {
     return (
         <StyledUtil>
-            <Link to="/"><Button>Sign In</Button></Link>
-            <Link to="/"><Button>Sign Up</Button></Link>
+            <Link to="/"><Button.border color="achromatic09" detailSize="1.15em">Join</Button.border></Link>
+            <Link to="/"><Button.primary detailSize="1.15em">Sign Up</Button.primary></Link>
         </StyledUtil>
     );
 }
