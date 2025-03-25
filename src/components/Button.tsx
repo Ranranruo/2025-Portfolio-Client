@@ -1,6 +1,6 @@
 import styled from "@emotion/styled";
 import { COLOR, CONTENT_SIZE, TITLE_SIZE } from "../styles/Variable";
-import { ACHROMATIC, EM, HEX, PX, SIZE } from "../types/Unit";
+import { EM, HEX, PX, SIZE } from "../types/Unit";
 
 const FONT_SIZE = {
   verysmall: CONTENT_SIZE["verysmall"],
@@ -10,48 +10,14 @@ const FONT_SIZE = {
   huge: TITLE_SIZE["huge"],
 };
 
-const PRIMARY_COLOR: Record<
-  PrimaryColor,
-  Record<"color" | "backgroundColor", HEX>
-> = {
-  primary: {
-    color: COLOR["achromatic09"],
-    backgroundColor: COLOR["main01"],
-  },
-  black: {
-    color: COLOR["achromatic09"],
-    backgroundColor: COLOR["achromatic01"],
-  },
-  white: {
-    color: COLOR["achromatic01"],
-    backgroundColor: COLOR["achromatic09"],
-  },
-} as const;
-
 interface ButtonProps {
   children: string;
   size?: SIZE;
   detailSize?: EM | PX;
+  color: keyof typeof COLOR;
 }
 
-type PrimaryColor = "primary" | "black" | "white";
-
-interface PrimaryButtonProps extends ButtonProps {
-  color?: "primary" | "black" | "white";
-}
-
-interface BorderButtonProps extends ButtonProps{
-  color?: ACHROMATIC;
-}
-
-// interface BorderButton {
-//     children: string;
-//     color: ACHROMATIC;
-//     size: SIZE;
-// }
-type StyledButtonProps = (PrimaryButtonProps & { className: "primary" }) | (BorderButtonProps & { className: "border" });
-
-const StyledButton = styled.button<StyledButtonProps>`
+const StyledButton = styled.button<ButtonProps>`
   padding: 0.5em 1em;
   cursor: pointer;
   font-weight: 400;
@@ -59,16 +25,14 @@ const StyledButton = styled.button<StyledButtonProps>`
   font-size: ${({ size, detailSize }) => detailSize ? detailSize : FONT_SIZE[size!]};
   ${({ className, color }) => {
     if (className == "primary") {
-      const { color: textColor, backgroundColor } = PRIMARY_COLOR[color!];
       return `
-            color: ${textColor};
-            background-color: ${backgroundColor};
-            `;
+      background-color:       
+      `;
     } else if (className == "border") {
-      const textColor = COLOR[color!];
       return `
-            color: ${textColor};
-            border: 1px solid ${textColor};
+      color: ${COLOR[color]}
+      background-color: transparent;
+      border: 1px solid ${COLOR[color]}
             `;
     }
   }}
@@ -76,10 +40,10 @@ const StyledButton = styled.button<StyledButtonProps>`
 
 const PrimaryButton = ({
   children = "default",
-  color = "primary",
+  color = "main01",
   size = "medium",
   detailSize
-}: PrimaryButtonProps) => {
+}: ButtonProps) => {
   return (
     <StyledButton className="primary" detailSize={detailSize} color={color} size={size}>
       {children}
@@ -89,10 +53,10 @@ const PrimaryButton = ({
 
 const BorderButton = ({
   children = "default",
-  color = "achromatic06",
+  color = "main01",
   size = "medium",
   detailSize
-}: BorderButtonProps) => {
+}: ButtonProps) => {
   return (
     <StyledButton className="border" detailSize={detailSize} color={color} size={size}>
       {children}

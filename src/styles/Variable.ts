@@ -5,22 +5,15 @@ export const INNER = "1400px";
 export const INNER_PADDING = "10px";
 
 // color
-export const COLOR: Record<string, HEX> = {
+export const COLOR = {
     main01: "#39E079",
     main02: "#34D170",
-    achromatic01: "#fdfeff",
-    achromatic02: "#f8f9fa",
-    achromatic03: "#f0f2f5",
-    achromatic04: "#dee2e6",
-    achromatic05: "#ced4da",
-    achromatic06: "#adb5bd",
-    achromatic07: "#6c757d",
-    achromatic08: "#495057",
-    achromatic09: "#343a40",
-    achromatic10: "#212529",
+    white01: "#fff",
+    white02: "#F9FAFB",
+    black01: "#35495E"
 } as const;
 
-export const GAP: Record<string, PX> = {
+export const GAP: Record<SIZE, PX> = {
     verysmall: "5px",
     small: "10px",
     medium: "20px",

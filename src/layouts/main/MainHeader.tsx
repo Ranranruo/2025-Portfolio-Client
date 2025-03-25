@@ -3,9 +3,7 @@ import Menu from "./Menu";
 import { GAP, INNER, INNER_PADDING } from "../../styles/Variable";
 import styled from "@emotion/styled";
 import Util from "./Util";
-import useContainer from "../../hooks/useCotainer";
-import { useEffect, useRef } from "react";
-
+import { RefObject, useEffect, useRef } from "react";
 const StyledHeader = styled.header`
     width: 100%;
     position: fixed;
@@ -32,10 +30,10 @@ const StyledHeader = styled.header`
 `;
 
 const MainHeader = () => {
-    const ref = useContainer();
+    
     return (
         <StyledHeader>
-            <div ref={ref} className="inner">
+            <div className="inner">
                 <div className="left">
                     <Logo />
                 </div>
