@@ -1,17 +1,23 @@
 import { EM, HEX, PX, SIZE } from "../types/Unit";
 
 // inner
-export const INNER = "1400px";
+export const INNER = "1440px";
 export const INNER_PADDING = "10px";
 
 // color
 export const COLOR = {
-    main01: "#39E079",
-    main02: "#34D170",
-    white01: "#fff",
+    main01: "#F29430",
+    main02: "#FEC164",
+    white01: "#fff",         // 가장 밝음
     white02: "#F9FAFB",
-    black01: "#35495E"
+    white03: "#F4F4F6",
+    background01: "#ECECEE",      // 가장 어두운 white 계열
+    gray01: "#C1C0BA",       // gray 계열
+    black01: "#150F0B",
+    backDrop01: "#ffe5d9"
 } as const;
+
+
 
 export const GAP: Record<SIZE, PX> = {
     verysmall: "5px",

@@ -1,6 +1,9 @@
 import { css } from "@emotion/react";
 
 const reset = css`
+  body {
+    background-color: #ECECEE;
+  }
   * {
     font-size: 16px;
     padding: 0;

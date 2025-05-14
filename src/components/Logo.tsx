@@ -24,7 +24,7 @@ const StyledLogo = styled.div<StyledLogoProps>`
   display: flex;
   font-family: 'Maple';
   font-weight: 900;
-  color: ${COLOR['main01']};
+  color: ${COLOR['black01']};
   gap: ${GAP['small']};
   > img { height: ${({size}) => IMG_SIZE[size]}; }
   > h1 { font-size: ${({size}) => TITLE_SIZE[size]}; }
@@ -36,7 +36,7 @@ const Logo = ({
 }: LogoProps) => {
   return (
     <StyledLogo size={size}>
-      <img src="images/logo.svg" />
+      {/* <img src="images/logo.svg" /> */}
       <h1>{children}</h1>
     </StyledLogo>
   );

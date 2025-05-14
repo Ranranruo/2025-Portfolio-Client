@@ -11,7 +11,7 @@ const StyledHeader = styled.header`
     left: 0;
     display: flex;
     justify-content: center;
-    padding: 1em 0;
+    padding: 3em 0;
     .inner {
         width: 100%;
         display: flex;
@@ -39,7 +39,6 @@ const MainHeader = () => {
                 </div>
                 <div className="right">
                     <Menu />
-                    <Util />
                 </div>
             </div>
         </StyledHeader>

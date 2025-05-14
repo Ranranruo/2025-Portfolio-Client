@@ -41,6 +41,24 @@ const font = css`
     font-weight: normal;
     font-style: normal;
   }
+  @font-face {
+    font-family: 'Sb';
+    src: url('font/sb/SBM.ttf');
+    font-weight: 400;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Sb';
+    src: url('font/sb/SBL.ttf');
+    font-weight: 600;
+    font-style: normal;
+  }
+  @font-face {
+    font-family: 'Sb';
+    src: url('font/sb/SBB.ttf');
+    font-weight: 900;
+    font-style: normal;
+  }
 `;
 
 export default font;
