@@ -2,7 +2,7 @@
 export type RGB = `${number}, ${number}, ${number}`;
 export type HEX = `#${string}`;
 
-export type Percent = `${number}%`;
+export type PRECENT = `${number}%`;
 export type PX = `${number}px`;
 export type SIZE = 'verysmall' | 'small' | 'medium' | 'large' | 'huge';
 export type EM = `${number}em`;

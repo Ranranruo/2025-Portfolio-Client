@@ -22,13 +22,14 @@ interface StyledLogoProps {
 
 const StyledLogo = styled.div<StyledLogoProps>`
   display: flex;
-  font-family: 'Maple';
   font-weight: 900;
   color: ${COLOR['black01']};
   gap: ${GAP['small']};
   > img { height: ${({size}) => IMG_SIZE[size]}; }
-  > h1 { font-size: ${({size}) => TITLE_SIZE[size]}; }
-`;
+  > h1 { 
+    font-family: 'Sb';
+    font-size: ${({size}) => TITLE_SIZE[size]}; 
+  }`;
 
 const Logo = ({
   children = "Portfolio",

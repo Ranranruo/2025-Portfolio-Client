@@ -1,8 +1,14 @@
 import { EM, HEX, PX, SIZE } from "../types/Unit";
 
 // inner
-export const INNER = "1440px";
-export const INNER_PADDING = "10px";
+export const INNER_PX = "1440px";
+export const INNER_PADDING = "30px";
+
+export const INNER = () => `
+    max-width: ${INNER_PX};
+    padding: 0 ${INNER_PADDING};
+    margin: 0 auto;
+`
 
 // color
 export const COLOR = {
@@ -14,9 +20,10 @@ export const COLOR = {
     background01: "#ECECEE",      // 가장 어두운 white 계열
     gray01: "#C1C0BA",       // gray 계열
     black01: "#150F0B",
-    backDrop01: "#ffe5d9"
-} as const;
+    backDrop01: "#ffe5d9",
+    backDrop02: "#ffd1b8"
 
+} as const;
 
 
 export const GAP: Record<SIZE, PX> = {

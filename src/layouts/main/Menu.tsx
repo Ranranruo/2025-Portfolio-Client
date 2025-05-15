@@ -8,6 +8,7 @@ const StyledMenu = styled.ul`
     a {
         /* color: #fff; */
         /* text-shadow: 0 4px 4px rgba(0, 0, 0, .25); */
+        font-family: "Sb";
     }
 `;
 

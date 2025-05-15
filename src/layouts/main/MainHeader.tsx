@@ -2,8 +2,8 @@ import Logo from "../../components/Logo";
 import Menu from "./Menu";
 import { GAP, INNER, INNER_PADDING } from "../../styles/Variable";
 import styled from "@emotion/styled";
-import Util from "./Util";
-import { RefObject, useEffect, useRef } from "react";
+import { motion } from "motion/react";
+
 const StyledHeader = styled.header`
     width: 100%;
     position: fixed;
@@ -16,8 +16,7 @@ const StyledHeader = styled.header`
         width: 100%;
         display: flex;
         justify-content: space-between;
-        max-width: ${INNER};
-        padding: 0 ${INNER_PADDING};
+        ${()=>INNER()}
         > .left {
 
         }
@@ -34,9 +33,9 @@ const MainHeader = () => {
     return (
         <StyledHeader>
             <div className="inner">
-                <div className="left">
+                <motion.div className="left">
                     <Logo />
-                </div>
+                </motion.div>
                 <div className="right">
                     <Menu />
                 </div>
