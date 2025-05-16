@@ -34,4 +34,5 @@ const TypeWriter = ({
   </motion.p>
 );
 
+
 export default TypeWriter;

@@ -26,7 +26,8 @@ const StyledButton = styled.button<ButtonProps>`
   ${({ className, color }) => {
     if (className == "primary") {
       return `
-      background-color:       
+      color: ${COLOR['white01']};
+      background-color: ${COLOR[color]};
       `;
     } else if (className == "border") {
       return `

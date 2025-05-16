@@ -1,4 +1,4 @@
-import Visual from "../components/main/Visual";
+import Visual from "../components/main/visual/Visual";
 import MainLayout from "../layouts/main/MainLayout";
 
 const MainPage = () => {

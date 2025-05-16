@@ -20,7 +20,7 @@ interface StyledLogoProps {
   size: SIZE;
 }
 
-const StyledLogo = styled.div<StyledLogoProps>`
+const StyledLogo = styled.a<StyledLogoProps>`
   display: flex;
   font-weight: 900;
   color: ${COLOR['black01']};
@@ -28,6 +28,7 @@ const StyledLogo = styled.div<StyledLogoProps>`
   > img { height: ${({size}) => IMG_SIZE[size]}; }
   > h1 { 
     font-family: 'Sb';
+    font-weight: 900;
     font-size: ${({size}) => TITLE_SIZE[size]}; 
   }`;
 
@@ -36,7 +37,7 @@ const Logo = ({
   size = "medium"
 }: LogoProps) => {
   return (
-    <StyledLogo size={size}>
+    <StyledLogo href="/" size={size}>
       {/* <img src="images/logo.svg" /> */}
       <h1>{children}</h1>
     </StyledLogo>
