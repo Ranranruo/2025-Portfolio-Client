@@ -6,7 +6,7 @@ const StyledVisual = styled.section`
     align-items: center;
     min-height: 100vh;
     width: 100%;
-    overflow-x: hidden;
+    overflow: hidden;
     background: radial-gradient(
         circle at 0% 0%, 
         ${() => COLOR['backDrop01']} 0%, 
