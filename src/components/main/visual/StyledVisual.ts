@@ -1,5 +1,5 @@
 import styled from "@emotion/styled";
-import { BORDER_GRADIENT, COLOR, CONTENT_SIZE, GRADIENT, INNER } from "../../../styles/Variable";
+import { COLOR, CONTENT_SIZE, GRADIENT_BACKGROUND, GRADIENT_BORDER, GRADIENT_TEXT, INNER } from "../../../styles/Variable";
 
 const StyledVisual = styled.section`
     display: flex;
@@ -7,10 +7,11 @@ const StyledVisual = styled.section`
     min-height: 100vh;
     width: 100%;
     overflow: hidden;
+    // #f6d365 0%, #fda085 100%
     background: radial-gradient(
         circle at 0% 0%, 
         ${COLOR['backDrop01']} 0%, 
-        #fff 25%
+        #fff 35%
     );
         /* ${COLOR['background01']} 40% */
     > .container {
@@ -50,9 +51,7 @@ const StyledVisual = styled.section`
                     }
                     > :nth-of-type(2) {
                         > span {
-                            ${GRADIENT}
-                            background-clip: text;
-                            -webkit-text-fill-color: transparent;
+                            ${GRADIENT_TEXT}
                         }
                         // color: ${COLOR['main01']};
                     }
@@ -83,23 +82,19 @@ const StyledVisual = styled.section`
                     }
                 }
                 > a:nth-of-type(1) {
-                    ${GRADIENT}
+                    ${GRADIENT_BACKGROUND}
                     color: ${COLOR['white01']};
                 }
                 > a:nth-of-type(2) {
                     position: relative;
-                    /* ${GRADIENT}
-                    background-clip: text;
-                    -webkit-text-fill-color: transparent; */
                     background-color: #fff;
-                    ${BORDER_GRADIENT}
+                    ${GRADIENT_BORDER}
                     border: 2px solid transparent;
                     color: transparent;
                     padding: 0em;
                     > span {
-                        ${GRADIENT}
-                        background-clip: text;
-                        -webkit-text-fill-color: transparent;
+                        ${GRADIENT_TEXT}
+
                     }
 
                 }
@@ -127,7 +122,7 @@ const StyledVisual = styled.section`
         > .back-drop {
             position: absolute;
             background: radial-gradient(
-                circle at 50% 55%,
+                circle at 50% 50%,
                 ${COLOR['backDrop02']} 0%, 
                 transparent 65%
             );

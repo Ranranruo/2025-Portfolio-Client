@@ -4,9 +4,15 @@ import { EM, HEX, PX, SIZE } from "../types/Unit";
 export const INNER_PX = "1600px";
 export const INNER_PADDING = "30px";
 
-export const GRADIENT = `background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);`;
-export const BORDER_GRADIENT = `
-    background-image: linear-gradient(#fff, #fff), linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+const GRADIENT = `linear-gradient(120deg, #f6d365 0%, #fda085 100%)`;
+export const GRADIENT_BACKGROUND = `background-image: ${GRADIENT};`;
+export const GRADIENT_TEXT = `
+    ${GRADIENT_BACKGROUND}
+    background-clip: text;
+    -webkit-text-fill-color: transparent;
+`;
+export const GRADIENT_BORDER = `
+    background-image: linear-gradient(#fff, #fff), ${GRADIENT};
     background-origin: border-box;
     background-clip: content-box, border-box;
 `;
@@ -26,8 +32,8 @@ export const COLOR = {
     background01: "#ECECEE",      // 가장 어두운 white 계열
     gray01: "#C1C0BA",       // gray 계열
     black01: "#150F0B",
-    backDrop01: "#ffe5d9",
-    backDrop02: "#ffd1b8"
+    backDrop01: "#ffe9d6",
+    backDrop02: "#ffe0c9"
 
 } as const;
 
