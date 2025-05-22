@@ -7,7 +7,7 @@ const StyledAboutMe = styled.section`
         display: flex;
         flex-wrap: wrap;
         justify-content: space-between;
-        ${INNER()}
+        ${INNER}
         > .image {
             height: 900px;
             display: flex;

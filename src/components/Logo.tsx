@@ -23,7 +23,6 @@ interface StyledLogoProps {
 const StyledLogo = styled.a<StyledLogoProps>`
   display: flex;
   font-weight: 900;
-  color: ${COLOR['black01']};
   gap: ${GAP['small']};
   > img { height: ${({size}) => IMG_SIZE[size]}; }
   > h1 { 

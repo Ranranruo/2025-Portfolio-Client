@@ -17,7 +17,7 @@ const StyledHeader = styled.header`
         width: 100%;
         display: flex;
         justify-content: space-between;
-        ${INNER()}
+        ${INNER}
         > .left {
 
         }

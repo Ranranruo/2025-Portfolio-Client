@@ -92,7 +92,9 @@ const Visual = () => {
                             whileHover={{ scale: 1.2 }}
                             whileTap={{ scale: 0.8 }}
                         >
-                            About Me
+                            <span>
+                                AboutMe
+                            </span>
                         </motion.a>}
                         {showContactBtn && <motion.a
                             href="#"
@@ -105,9 +107,11 @@ const Visual = () => {
                             whileHover={{ scale: 1.2 }}
                             whileTap={{ scale: 0.8 }}
                         >
-                            Contact
+                            <span>
+                                Contact
+                            </span>
                         </motion.a>}
-                        <a style={{ opacity: 0 }}>asd</a>
+                        <a style={{ opacity: 0 }}><span>aasdassd</span></a>
                     </div>
                 </div>
                 <div className="content">

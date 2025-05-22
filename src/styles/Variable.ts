@@ -4,7 +4,13 @@ import { EM, HEX, PX, SIZE } from "../types/Unit";
 export const INNER_PX = "1600px";
 export const INNER_PADDING = "30px";
 
-export const INNER = () => `
+export const GRADIENT = `background-image: linear-gradient(-60deg, #ff5858 0%, #f09819 100%);`;
+export const BORDER_GRADIENT = `
+    background-image: linear-gradient(#fff, #fff), linear-gradient(-60deg, #ff5858 0%, #f09819 100%);
+    background-origin: border-box;
+    background-clip: content-box, border-box;
+`;
+export const INNER = `
     max-width: ${INNER_PX};
     padding: 0 ${INNER_PADDING};
     margin: 0 auto;
@@ -12,7 +18,7 @@ export const INNER = () => `
 
 // color
 export const COLOR = {
-    main01: "#F29430",
+    main01: "#FFB84D",
     main02: "#FEC164",
     white01: "#fff",         // 가장 밝음
     white02: "#F9FAFB",

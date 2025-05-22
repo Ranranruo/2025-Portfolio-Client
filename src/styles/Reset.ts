@@ -2,8 +2,8 @@ import { css } from "@emotion/react";
 
 const reset = css`
   body {
-    background-color: #ECECEE;
-    color: #150F0B;
+    // background-color: #ECECEE;
+    color: #333;
     font-family: 'Sb';
   }
   * {
