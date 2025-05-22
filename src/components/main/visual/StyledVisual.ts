@@ -9,11 +9,11 @@ const StyledVisual = styled.section`
     overflow: hidden;
     background: radial-gradient(
         circle at 0% 0%, 
-        ${() => COLOR['backDrop01']} 0%, 
-        ${() => COLOR['background01']} 40%
+        ${COLOR['backDrop01']} 0%, 
+        ${COLOR['background01']} 40%
     );
     > .container {
-        ${() => INNER()}
+        ${INNER()}
         width: 100%;
         height: 100%;
         display: flex;
@@ -34,7 +34,6 @@ const StyledVisual = styled.section`
                 div:nth-of-type(1) {
                     span {
                         font-size: 5em;
-                        font-family: 'Sb';
                         font-weight: 900;
                     }
                 }
@@ -45,12 +44,11 @@ const StyledVisual = styled.section`
                     > p {
                         > span {
                             font-size: 4em;
-                            font-family: 'Sb';
                             font-weight: 400;
                         }
                     }
                     > :nth-of-type(2) {
-                        color: ${()=>COLOR['main01']};
+                        color: ${COLOR['main01']};
                     }
                 }
                 h2 > p, h1 > p {
@@ -69,17 +67,16 @@ const StyledVisual = styled.section`
                     box-shadow: 1px 1px 5px 1px rgba(0, 0, 0, .2);
                     display: inline-block;
                     padding: 1em 2em;
-                    font-family: 'Sb';
                     border-radius: 10px;
                     font-size: ${CONTENT_SIZE['large']};
                 }
                 > a:nth-of-type(1) {
-                    background-color: ${()=>COLOR['main01']};
-                    color: ${()=>COLOR['white01']};
+                    background-color: ${COLOR['main01']};
+                    color: ${COLOR['white01']};
                 }
                 > a:nth-of-type(2) {
-                    border: 1px solid ${()=>COLOR['main01']};
-                    color: ${()=>COLOR['main01']};
+                    border: 1px solid ${COLOR['main01']};
+                    color: ${COLOR['main01']};
                 }
             }
         }
@@ -94,7 +91,7 @@ const StyledVisual = styled.section`
                 position: absolute;
                 background: radial-gradient(
                     circle at 50% 55%,
-                    ${() => COLOR['backDrop02']} 0%, 
+                    ${COLOR['backDrop02']} 0%, 
                     transparent 65%
                 );
                 width: 900px;

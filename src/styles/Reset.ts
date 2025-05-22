@@ -4,6 +4,7 @@ const reset = css`
   body {
     background-color: #ECECEE;
     color: #150F0B;
+    font-family: 'Sb';
   }
   * {
     font-size: 16px;
@@ -15,7 +16,7 @@ const reset = css`
     border: none;
     background-color: transparent;
     outline: none;
-    font-family: Pretendard;
+    font-family: inherit;
     box-sizing: border-box;
   }
 `;

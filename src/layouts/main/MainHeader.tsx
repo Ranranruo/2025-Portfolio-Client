@@ -6,6 +6,7 @@ import { motion } from "motion/react";
 
 const StyledHeader = styled.header`
     width: 100%;
+    z-index: 3;
     position: fixed;
     top: 0;
     left: 0;
@@ -16,7 +17,7 @@ const StyledHeader = styled.header`
         width: 100%;
         display: flex;
         justify-content: space-between;
-        ${()=>INNER()}
+        ${INNER()}
         > .left {
 
         }
