@@ -45,7 +45,7 @@ const StyledVisual = styled.section`
                     gap: 10px 0;
                     > p {
                         > span {
-                            font-size: 4em;
+                            font-size: 3em;
                             font-weight: 400;
                         }
                     }
@@ -118,7 +118,7 @@ const StyledVisual = styled.section`
         justify-content: center;
         align-items: center;
         padding-bottom: 100px;
-        width: 600px;
+        width: 35rem;
         > .back-drop {
             position: absolute;
             background: radial-gradient(

@@ -1,7 +1,7 @@
 import { EM, HEX, PX, SIZE } from "../types/Unit";
 
 // inner
-export const INNER_PX = "1600px";
+export const INNER_PX = "1440px";
 export const INNER_PADDING = "30px";
 
 const GRADIENT = `linear-gradient(120deg, #f6d365 0%, #fda085 100%)`;

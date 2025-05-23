@@ -9,8 +9,14 @@ const AboutMe = () => {
                 </div>
                 <div className="container">
                     <div className="texts">
-                        <h1 className="title">Get to Know Me</h1>
-                        <div className="content">asdasdasd</div>
+                        <h1 className="title">Nothing is impossible</h1>
+                        <div className="text">
+                            <p>뭐든지 도전하는 <b>도전정신</b>과 하나하나의 집중하는 <b>섬세함</b>으로</p>
+                            <p>앞으로 나아가는 개발자 신민석입니다.</p>
+                        </div>
+                    </div>
+                    <div className="statistics">
+
                     </div>
                 </div>
             </div>
